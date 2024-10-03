@@ -16,6 +16,7 @@ export default function Home() {
         onClick={()=>{
           setName(prompt("Enter your name"))
         }}>Click to add your name</button>
+        <h1>working start</h1>
       </div>
   
   );
