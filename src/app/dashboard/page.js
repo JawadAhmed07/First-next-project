@@ -1,8 +1,3 @@
-
-
-const dashboard=()=>{
-    return(
-        <h1>Hello this is dashboard page</h1>
-    );
-}
-export default dashboard;
+export default function DashboardLayout({ children }) {
+    return <section>{children}</section>
+  }

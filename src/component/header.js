@@ -1,7 +1,8 @@
 'use client'
 
 
- 
+import '../app/globals.css';
+
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
  
@@ -9,7 +10,7 @@ export function Header() {
   const pathname = usePathname()
  
   return (
-    <nav className='bg-purple-300  text-center justify-center align-center items-center flex py-2'>
+    <nav className='bg-purple-600  text-center justify-center align-center items-center flex py-2'>
       <Link className={`link px-3 ${pathname === '/' ? 'active underline' : ''} `} href="/">
         Home
       </Link>
@@ -24,8 +25,8 @@ export function Header() {
       </Link>
  
       <Link
-        className={`link px-3 ${pathname === '/about' ? 'active underline' : ''}`}
-        href="/about"
+        className={`link px-3 ${pathname === '/aboutus' ? 'active underline' : ''}`}
+        href="/aboutus"
       >
         About
       </Link>
