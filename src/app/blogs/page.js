@@ -44,15 +44,25 @@ export default function Blogs() {
   ];
 
   return (
-    <div className="container mx-auto text-center p-20">
-      <h1 className="font-bold text-5xl">ALL BLOGS</h1>
-      {blogs.map((data) => (
+    <div className="container mx-auto p-20 text-center">
+      <h1 className="font-bold text-3xl">All blogs</h1>
+      {blogs.map((data)=>(
         <Link key={data.id} href={`/blogs/${data.slug}`}>
-          <h1 className="border border-purple-300 p-2 px-3 text-center my-2">
-            {data.title}
-          </h1>
+          <h1 className="my-2 p-2 border border-purple-300 shadow ">{data.title}</h1>
         </Link>
       ))}
     </div>
+  
   );
 }
+
+{/* <div className="container mx-auto text-center p-20">
+<h1 className="font-bold text-5xl">ALL BLOGS</h1>
+{blogs.map((data) => (
+  <Link key={data.id} href={`/blogs/${data.slug}`}>
+    <h1 className="border border-purple-300 p-2 px-3 text-center my-2">
+      {data.title}
+    </h1>
+  </Link>
+))}
+</div> */}
