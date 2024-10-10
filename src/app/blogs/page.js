@@ -55,14 +55,3 @@ export default function Blogs() {
   
   );
 }
-
-{/* <div className="container mx-auto text-center p-20">
-<h1 className="font-bold text-5xl">ALL BLOGS</h1>
-{blogs.map((data) => (
-  <Link key={data.id} href={`/blogs/${data.slug}`}>
-    <h1 className="border border-purple-300 p-2 px-3 text-center my-2">
-      {data.title}
-    </h1>
-  </Link>
-))}
-</div> */}

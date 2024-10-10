@@ -1,4 +1,4 @@
-import Quotes from "./page";
+// import Quotes from "./page";
 
 
 const Card=({author,quote })=>{
