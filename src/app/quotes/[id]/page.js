@@ -1,9 +1,14 @@
+import { notFound } from "next/navigation";
 
 
 export default async function SingleQuote({ params }) {
     let singleQuote = await fetch(`https://dummyjson.com/quotes/${params.id}`)
     singleQuote = await singleQuote.json()
     console.log("response=>", singleQuote);
+
+    if(singleQuote.message){
+        notFound();
+    }
 
     return (
         <div className="text-center py-20">
