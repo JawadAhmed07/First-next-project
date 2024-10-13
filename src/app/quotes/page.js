@@ -21,6 +21,7 @@ const Quotes=async()=>{
              ))
              } */}
              <Card author={quotes.author}  quote={quotes.quote}/>
+             {/* continue onward from new laptop */}
 
         </div>
 
