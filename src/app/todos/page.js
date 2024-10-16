@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-
+// just pushing on github
 
 export default async function Todos() {
 
@@ -14,6 +14,7 @@ export default async function Todos() {
                     return (
                         <Link key={todo} href={`/todo/${todo}`}>
                         <h1 className="text-center my-5 itms-center border text-3xl w-2/3 mx-auto">{todo}</h1>
+                        <h1>todos fetched</h1>
                     </Link>
                     )
                 })
