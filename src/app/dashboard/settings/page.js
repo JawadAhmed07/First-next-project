@@ -1,10 +1,10 @@
 
 
-const settings=()=>{
-    return(
+const settings = () => {
+    return (
         <>
-        <h1 className="text-3xl py-10">Hello this is settings page</h1>
-        
+            <h1 className="text-3xl bg-gray-200 w-full py-10">Hello this is settings ka page</h1>
+
         </>
     );
 }
