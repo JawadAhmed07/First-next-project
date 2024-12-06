@@ -15,6 +15,6 @@ export default function DashboardLayout({ children }) {
     {/* <div className="w-2/3 "></div> */}
     {/* 26 september old push */}
     {/* just a fake push to maintain github */}
-
+    {/* just a fake push to maintain github */}
     {children}</section>
 }
